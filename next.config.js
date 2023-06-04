@@ -11,6 +11,7 @@ const nextConfig = {
       "jnj-flooring-work-gallery.s3.amazonaws.com",
     ],
   },
+
   reactStrictMode: false,
 };
 

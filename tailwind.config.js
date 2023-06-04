@@ -15,12 +15,13 @@ module.exports = {
       sm: "480px",
       md: "768px",
       lg: "976px",
-      xl: "1440px",
+      xl: "1200px",
     },
 
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
+      open: ["Open Sans", "sans - serif"],
     },
     extend: {
       spacing: {
@@ -36,8 +37,12 @@ module.exports = {
         prime_orange: "#fe6f1d",
         prime_blue: "#14c5fd",
         prime_gray: "#c0c0c0",
-        prime_pink: "#c0c0c0",
+        prime_gray2: "#7a7a7a",
+        prime_black: "#14151a",
         bg_gray: "#343a40",
+      },
+      animation: {
+        "spin-slow": "spin 5s linear infinite",
       },
     },
   },

@@ -24,7 +24,9 @@ body {
   font-style: normal;
   font-variant: normal;
 }
-
+.scroll-behaviour {
+  scroll-behavior: smooth;
+}
 /* .overlay1 {
   background: url("../src/assets/overlayimg1.jpg") 0 0 / cover;
   background-repeat: no-repeat;
@@ -46,3 +48,35 @@ body {
   background-attachment: fixed;
   background-position: center;
 } */
+
+/* Tooltip style */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  right: 100%;
+  top: 0%;
+  transform: translate(-20%, -10%);
+  background-color: #222;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  clip-path: polygon(
+    85% 0%,
+    90% 40%,
+    100% 50%,
+    90% 60%,
+    85% 100%,
+    0% 100%,
+    0% 0%
+  );
+}
+
+.tooltip-trigger {
+  cursor: pointer;
+}

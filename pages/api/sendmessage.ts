@@ -21,15 +21,19 @@ function runMiddleware(
       }
       try {
         const display = `
-     <h2>The customer wants to contact you</h2>
-	<p><strong>Name:</strong> ${req.body.name}</p>
-	<p><strong>Email:</strong> ${req.body.email}</p>
-	<p><strong>Phone:</strong> ${req.body.phone}</p>
-	<p><strong>Message:</strong> ${req.body.message}</p>
-   `;
+           <h2>Someone wants to contact you</h2>
+        <p><strong>Name:</strong> ${req.body.fname} ${req.body.lname}</p>
+        <p><strong>Email:</strong> ${req.body.email}</p>
+        <p><strong>Phone:</strong> ${req.body.phone}</p>
+        <p><strong>Message:</strong> ${req.body.message}</p>
+         `;
+
         const params = {
+          // Destination: {
+          //   ToAddresses: [req.body.toEmail],
+          // },
           Destination: {
-            ToAddresses: [req.body.toEmail],
+            ToAddresses: ["thuvamathu618@gmail.com"],
           },
           Message: {
             Body: {
@@ -47,8 +51,8 @@ function runMiddleware(
               Data: "Contact request",
             },
           },
-          //Source: "no-replay@thuvarakan.info",
-          Source: "JNJFlooring@jnjflooring.com.au",
+          Source: "no-replay@thuvarakan.info",
+          //Source: "JNJFlooring@jnjflooring.com.au",
         };
 
         var sendPromise = awsSES.sendEmail(params).promise();

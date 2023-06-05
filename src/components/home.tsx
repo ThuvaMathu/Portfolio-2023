@@ -37,34 +37,19 @@ function Home() {
               sequence={[
                 "Web Developer",
                 1000,
-                () => {
-                  colorRef.current.classList.remove("text-prime_yellow");
-                  colorRef.current.classList.add("text-prime_Green");
-                },
+
                 "Android Developer",
                 1000,
-                () => {
-                  colorRef.current.classList.remove("text-prime_Green");
-                  colorRef.current.classList.add("text-prime_blue");
-                },
+
                 "FullStack Developer",
                 2000,
-                () => {
-                  colorRef.current.classList.remove("text-prime_blue");
-                  colorRef.current.classList.add("text-white");
-                },
+
                 "FrontEnd Developer",
                 3000,
-                () => {
-                  colorRef.current.classList.remove("text-prime_white");
-                  colorRef.current.classList.add("text-prime_orange");
-                },
+
                 "BackEnd Developer",
                 3000,
-                () => {
-                  colorRef.current.classList.remove("text-prime_orange");
-                  colorRef.current.classList.add("text-prime_yellow");
-                },
+
                 "IOS Developer",
                 3000,
               ]}

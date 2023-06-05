@@ -16,6 +16,13 @@ export const personal = {
 
 export const education = [
   {
+    university: "Navitas ",
+    degree: "ACS Professional Year Program ",
+    major: "Computer Science (PY Program)",
+    location: "Brisbane, Queensland, Australia",
+    dates: "May 2023 - Present",
+  },
+  {
     university: "Queensland University of Technology",
     degree: "Masters in Information Technology",
     major: "Software Development",
@@ -32,6 +39,12 @@ export const education = [
 ];
 
 export const workExperience = [
+  {
+    position: "Junior Frontend Developer",
+    dates: "June 2023 - present",
+    company: "Stoik Digital",
+    location: "Brisbane, QLD",
+  },
   {
     position: "UI/UX Developer",
     dates: "July 2022 - November 2022",

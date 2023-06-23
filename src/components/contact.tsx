@@ -139,7 +139,7 @@ export default function Contact() {
                     <SimpleLoader height={30} width={30} />
                   ) : (
                     <div className=" flex flex-row gap-3 justify-center items-center   ">
-                      SEND MESSAGE{" "}
+                      SEND MESSAGE
                       <RiSendPlaneFill className=" text-xl animate-pulse " />
                     </div>
                   )}

@@ -27,7 +27,7 @@ export default function Resume() {
             </p>
           </TranslateOnScroll>
           {education.map((data: any, i: number) => (
-            <TranslateOnScroll translateY={50} duration={700}>
+            <TranslateOnScroll translateY={50} duration={700} key={i}>
               <div className=" flex flex-row w-full h-full group  ">
                 <div className="   flex flex-col justify-center items-center ">
                   <div className=" w-4 h-4 bg-prime_gray rounded-full group-hover:bg-prime_Green transition-all duration-300 ease-in  " />
@@ -53,7 +53,7 @@ export default function Resume() {
             </p>
           </TranslateOnScroll>
           {workExperience.map((data: any, i: number) => (
-            <TranslateOnScroll translateY={50} duration={700}>
+            <TranslateOnScroll translateY={50} duration={700} key={i}>
               <div className=" flex flex-row w-full h-full group ">
                 <div className="   flex flex-col justify-center items-center ">
                   <div className=" w-4 h-4 bg-prime_gray rounded-full group-hover:bg-prime_Green transition-all duration-300 ease-in  " />

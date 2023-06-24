@@ -26,7 +26,7 @@ export default function FormModel(props: modetProps) {
                 <TiTick className=" text-prime_Green text-8xl " />
               </div>
               <p className=" text-bg_gray text-xl font-semibold ">
-                Thanks
+                Thank you
                 <br />I will contact you soon
               </p>
             </div>

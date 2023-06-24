@@ -24,6 +24,7 @@ import {
   specializations,
   workExperience,
 } from "../data-service/data-provider";
+import Link from "next/link";
 export default function Portfolio() {
   return (
     <>
@@ -59,7 +60,7 @@ export default function Portfolio() {
                       </div>
 
                       <div className=" flex justify-start items-start w-full mt-5 ml-5 ">
-                        <a
+                        <Link
                           href={data?.webLink}
                           target="_blank"
                           className=" text-lg px-8 py-2 rounded-full bg-prime_black group-hover:bg-white group-hover:text-black transition-all duration-700 ease-in-out "
@@ -67,7 +68,7 @@ export default function Portfolio() {
                           <div className=" flex flex-row justify-center items-center gap-4 ">
                             View <MdOpenInNew className="" />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
 

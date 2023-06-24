@@ -73,7 +73,7 @@ function runMiddleware(
             console.error(err, err.stack);
           });
       } catch (error) {
-        console.log("failed to Get image", error);
+        console.log("failed to send message", error);
         reject({
           status: 500,
           message: "failed to get data",

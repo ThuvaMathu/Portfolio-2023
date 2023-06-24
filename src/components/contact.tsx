@@ -74,7 +74,8 @@ export default function Contact() {
         <div className=" group/first ">
           <TranslateOnScroll translateY={100} duration={700}>
             <p className="text-4xl lg:text-6xl mb-10  ">
-              Let's Work <span className=" text-prime_Green ">Together!</span>
+              {"Let's"} Work{" "}
+              <span className=" text-prime_Green ">Together!</span>
             </p>
             <p className="text-xl lg:text-2xl mb-10  ">{personal.email}</p>
           </TranslateOnScroll>
@@ -139,7 +140,7 @@ export default function Contact() {
                     <SimpleLoader height={30} width={30} />
                   ) : (
                     <div className=" flex flex-row gap-3 justify-center items-center   ">
-                      SEND MESSAGE{" "}
+                      SEND MESSAGE
                       <RiSendPlaneFill className=" text-xl animate-pulse " />
                     </div>
                   )}

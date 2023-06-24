@@ -34,7 +34,7 @@ function Profile() {
             <br /> My expertise includes React, React Native, Flutter, Node.js,
             and cloud platforms like GCP and AWS. With a {"Master's"} in
             Information Technology and collaborative experience from an ALM
-            Cloud internship, I am eager to leverage my skills in a new role.{" "}
+            Cloud internship, I am eager to leverage my skills in a new role.
             {"Let's"}
             discuss how I can contribute to your project.
           </p>

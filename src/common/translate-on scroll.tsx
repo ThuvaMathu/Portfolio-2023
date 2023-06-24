@@ -15,7 +15,6 @@ const TranslateOnScroll = ({ children, ...props }: translateType) => {
   const { translateX, translateY, duration, executeOnload } = props;
   //console.log(props);
   useEffect(() => {
-    console.log("top");
     if (executeOnload) {
       setShow(true);
     }

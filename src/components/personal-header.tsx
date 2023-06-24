@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import myImg from "@/assets/my-img.png";
-import { FaGithub, FaTwitter, FaLinkedin, FaDownload } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { ImArrowDown2 } from "react-icons/im";
 import { personal } from "../data-service/data-provider";
+import Link from "next/link";
+
 export default function PersonalHeader() {
   return (
     <>
@@ -24,26 +26,39 @@ export default function PersonalHeader() {
           <p className=" text-lg sm:text-2xl  "> Based on {personal.based}</p>
           {/* Icons section  */}
           <div className=" mt-10 flex flex-row gap-2 ">
-            <div className=" w-16 h-16 border border-prime_gray rounded-full flex justify-center items-center text-prime_gray hover:text-prime_Green hover:border-prime_Green transition-all duration-500 ease-linear ">
+            <Link
+              href="https://github.com/ThuvaMathu"
+              target="_blank"
+              className=" w-16 h-16 border border-prime_gray rounded-full flex justify-center items-center text-prime_gray hover:text-prime_Green hover:border-prime_Green transition-all duration-500 ease-linear "
+            >
               <FaGithub size={30} />
-            </div>
-            <div className=" w-16 h-16 border border-prime_gray rounded-full flex justify-center items-center text-prime_gray hover:text-prime_Green hover:border-prime_Green transition-all duration-500 ease-linear ">
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/thuvarakan-selvasothy/"
+              target="_blank"
+              className=" w-16 h-16 border border-prime_gray rounded-full flex justify-center items-center text-prime_gray hover:text-prime_Green hover:border-prime_Green transition-all duration-500 ease-linear "
+            >
               <FaLinkedin size={30} />
-            </div>
-            <div className=" w-16 h-16 border border-prime_gray rounded-full flex justify-center items-center text-prime_gray hover:text-prime_Green hover:border-prime_Green transition-all duration-500 ease-linear ">
+            </Link>
+            <Link
+              href="https://twitter.com/TSelvasothy"
+              target="_blank"
+              className=" w-16 h-16 border border-prime_gray rounded-full flex justify-center items-center text-prime_gray hover:text-prime_Green hover:border-prime_Green transition-all duration-500 ease-linear "
+            >
               <FaTwitter size={30} />
-            </div>
+            </Link>
           </div>
-          {/* Button */}
           <div className=" w-full flex justify-center items-start gap-3 ">
-            <button
-              type="button"
+            <a
+              href="/my_resume.pdf"
+              target="_blank"
+              download
               className=" w-4/5 mt-10 bg-[] text-lg rounded-2xl text-black py-3 flex justify-center items-center hover:scale-105 transition-all duration-500 ease-linear bg-prime_Green "
             >
               <div className=" flex flex-row gap-3 justify-center items-center ">
                 DOWNLOAD CV <ImArrowDown2 className=" animate-bounce " />
               </div>
-            </button>
+            </a>
           </div>
         </div>
       </div>

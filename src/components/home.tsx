@@ -93,7 +93,7 @@ function Home() {
             <p className=" text-gray-500 uppercase ">years of experience</p>
           </div>
           <div className=" flex flex-col max-w-[150px]">
-            <p className=" text-prime_Green text-7xl xl:text-8xl"> 5+ </p>
+            <p className=" text-prime_Green text-7xl xl:text-8xl"> 10+ </p>
             <p className=" text-gray-500 uppercase ">Projects Completed</p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { MyContext } from "@/src/context/app-context";
+import Link from "next/link";
 import React, { Children, useContext } from "react";
 import {
   FaHome,
@@ -119,9 +120,21 @@ export default function MinNavItems() {
         </ScrollLink>
         <p className=" text-xl mt-4 "> Social </p>
         <div className=" flex flex-row gap-5 ">
-          <FaGithub size={20} />
+          {/* <FaGithub size={20} />
           <FaLinkedin size={20} />
-          <FaTwitter size={20} />
+          <FaTwitter size={20} /> */}
+          <Link href="https://github.com/ThuvaMathu" target="_blank">
+            <FaGithub size={20} />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/thuvarakan-selvasothy/"
+            target="_blank"
+          >
+            <FaLinkedin size={20} />
+          </Link>
+          <Link href="https://twitter.com/TSelvasothy" target="_blank">
+            <FaTwitter size={20} />
+          </Link>
         </div>
       </div>
     </>

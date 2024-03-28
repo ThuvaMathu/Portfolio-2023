@@ -30,7 +30,7 @@ const TextArea = (props: textBoxProps) => {
   };
 
   return (
-    <div className=" flex flex-col text-white ">
+    <div className=" flex flex-col text-white w-full ">
       <label className=" mb-1 ml-1 text-md text-white ">
         {label} {required && <span className=" text-red-500 ">*</span>}
       </label>
@@ -42,7 +42,7 @@ const TextArea = (props: textBoxProps) => {
         onChange={(e) => onChange(e)}
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
-        className={`border border-gray-300 px-3 py-2 rounded-md bg-transparent ${className} `}
+        className={`border border-gray-300 px-3 py-2 rounded-md bg-transparent w-full ${className} `}
       />
     </div>
   );

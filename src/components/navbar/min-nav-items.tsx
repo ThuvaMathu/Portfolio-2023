@@ -1,4 +1,5 @@
 import { MyContext } from "@/src/context/app-context";
+import Link from "next/link";
 import React, { Children, useContext } from "react";
 import {
   FaHome,
@@ -11,6 +12,8 @@ import {
   FaTwitter,
   FaLinkedin,
   FaBuffer,
+  FaCertificate,
+  FaHackerrank,
 } from "react-icons/fa";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
@@ -106,6 +109,21 @@ export default function MinNavItems() {
         </ScrollLink>
         <ScrollLink
           activeClass="active"
+          to="certificates"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <Menu>
+            <FaCertificate className={commonClass("text-xl", "certificates")} />
+            <p className={commonClass("text-lg", "certificates")}>
+              Certificates
+            </p>
+          </Menu>
+        </ScrollLink>
+        <ScrollLink
+          activeClass="active"
           to="contact"
           spy={true}
           smooth={true}
@@ -119,9 +137,24 @@ export default function MinNavItems() {
         </ScrollLink>
         <p className=" text-xl mt-4 "> Social </p>
         <div className=" flex flex-row gap-5 ">
-          <FaGithub size={20} />
+          {/* <FaGithub size={20} />
           <FaLinkedin size={20} />
-          <FaTwitter size={20} />
+          <FaTwitter size={20} /> */}
+          <Link href="https://github.com/ThuvaMathu" target="_blank">
+            <FaGithub size={20} />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/thuvarakan-selvasothy/"
+            target="_blank"
+          >
+            <FaLinkedin size={20} />
+          </Link>
+          <Link
+            href="https://www.hackerrank.com/profile/thuvamathu618"
+            target="_blank"
+          >
+            <FaHackerrank size={20} />
+          </Link>
         </div>
       </div>
     </>

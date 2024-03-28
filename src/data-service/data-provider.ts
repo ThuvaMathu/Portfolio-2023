@@ -4,6 +4,19 @@ import investImg from "@/assets/porfolio_imgs/invest.webp";
 import diginesImg from "@/assets/porfolio_imgs/digines.webp";
 import partyImg from "@/assets/porfolio_imgs/party.webp";
 import resonateImg from "@/assets/porfolio_imgs/resonate.webp";
+import axioWeb from "@/assets/porfolio_imgs/axio_website.png";
+import axioApp from "@/assets/porfolio_imgs/axio_app.png";
+import { StaticImageData } from "next/image";
+
+interface IProjectData {
+  title: string;
+  img: StaticImageData;
+  webLink: string;
+  color: string;
+  tx: number;
+  tech: string;
+  des: string;
+}
 
 export const personal = {
   name: "Thuvarakan",
@@ -40,7 +53,7 @@ export const education = [
 
 export const workExperience = [
   {
-    position: "Junior Frontend Developer",
+    position: "Software Developer",
     dates: "June 2023 - present",
     company: "Stoik Digital",
     location: "Brisbane, QLD",
@@ -61,7 +74,7 @@ export const workExperience = [
 
 export const specializations = [
   {
-    header: "Website Design",
+    header: "UI/UX Design",
     description:
       "I create visually appealing and user-friendly website designs.",
     done: "6 Projects",
@@ -70,7 +83,7 @@ export const specializations = [
   {
     header: "Development",
     description:
-      "I build websites ready for live deployment using React, Node, Flutter, etc.",
+      "I build websites ready for live deployment using React, Next, Flutter, etc.",
     done: "8 Projects",
     tx: 100,
   },
@@ -90,9 +103,47 @@ export const specializations = [
   },
 ];
 
-export const Projects = [
+export const Projects: IProjectData[] = [
+  {
+    title: "Axio - Company website",
+    img: axioWeb,
+    webLink: "https://axiofinance.com.au/",
+    color: "#464731",
+    tx: -100,
+    tech: "Next.js, Tailwind, TypeScript, AWS and GCP",
+    des: "This website represents a financial firm integrating an AI chatbot for tailored financial assistance. It features a blog section with the latest company updates, all optimized for enhanced search engine visibility.",
+  },
+  {
+    title: "Axio- Company Application",
+    img: axioApp,
+    webLink: "https://app.axiofinance.com.au/",
+    color: "#3c4731",
+    tx: 100,
+    tech: "React.js, Tailwind, Python, TypeScript and AWS",
+    des: "This web application enables users to apply for diverse loans and manage their applications effectively via a user-friendly dashboard. With easy navigation and comprehensive control, users can optimize their borrowing experience.",
+  },
   {
     title: "JNJ Flooring - Company website",
+    img: jnjImg,
+    webLink: "https://www.jnjflooring.com.au/",
+    color: "#314733",
+    tx: -100,
+    tech: "Next.js, Tailwind, TypeScript, and AWS",
+    des: "This website serves as a platform for JNJ Flooring to effectively present its flooring services, featuring a comprehensive gallery and up-to-date information on their latest successfully executed projects.",
+  },
+  {
+    title: "Envited - Pre-Employment Assessment",
+    img: partyImg,
+    webLink: "https://main.d2zkllkoxm3q6k.amplifyapp.com/",
+    color: "#31473e",
+    tx: -100,
+    tech: "React.js, Material UI and AWS",
+    des: "I created this website for pre-interview assessments. Users can create events and easily share them with friends, streamlining the planning process and facilitating seamless coordination for various gatherings and activities.",
+  },
+];
+export const blogs = [
+  {
+    title: "Creating a React app",
     img: jnjImg,
     webLink: "https://www.jnjflooring.com.au/",
     color: "#6b9080",

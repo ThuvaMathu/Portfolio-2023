@@ -1,27 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { TypeAnimation } from "react-type-animation";
-import MyProjectCircle from "../svg/my-project-spinner";
-import {
-  FaHome,
-  FaUserTie,
-  FaCubes,
-  FaShapes,
-  FaBriefcase,
-  FaEnvelope,
-  FaArrowDown,
-  FaBuffer,
-  FaReact,
-  FaFigma,
-  FaAws,
-  FaWordpress,
-} from "react-icons/fa";
+import React from "react";
+import { FaShapes, FaReact, FaFigma, FaAws, FaWordpress } from "react-icons/fa";
 import { SiFlutter, SiNextdotjs } from "react-icons/si";
 import TranslateOnScroll from "../common/translate-on scroll";
-import {
-  education,
-  specializations,
-  workExperience,
-} from "../data-service/data-provider";
 export default function MySKills() {
   const logoSize = 80;
   const skillList = [
@@ -81,7 +61,7 @@ export default function MySKills() {
               My <span className=" text-prime_Green ">Skills</span>
             </p>
           </TranslateOnScroll>
-          <div className=" grid grid-cols-1 justify-center items-center sm:grid-cols-2 lg:grid-cols-3  w-full gap-5 ">
+          <div className=" grid grid-cols-2 justify-center items-center sm:grid-cols-2 lg:grid-cols-3  w-full gap-5 ">
             {skillList.map((data: any, i: number) => (
               <div
                 className=" flex sm:justify-startr justify-center items-center "
@@ -92,7 +72,7 @@ export default function MySKills() {
                   translateX={data?.tx}
                   duration={3000}
                 >
-                  <div className=" flex flex-col sm:w-44 w-36 py-10 gap-12 sm:gap-16 justify-center items-center group border border-prime_gray2 rounded-[500px]   hover:border-prime_Green transition-all duration-700 ease-in-out">
+                  <div className=" flex flex-col xs:w-36 sm:w-44 w-28 py-10 gap-8 xs:gap-12 sm:gap-16 justify-center items-center group border border-prime_gray2 rounded-[500px]   hover:border-prime_Green transition-all duration-700 ease-in-out">
                     <div className=" text-6xl sm:text-8xl group-hover:text-white text-prime_gray2 hover:border-prime_Green transition-all duration-700 ease-in-out">
                       {data?.logo}
                     </div>

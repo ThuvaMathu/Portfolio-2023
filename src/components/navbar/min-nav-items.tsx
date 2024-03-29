@@ -12,6 +12,8 @@ import {
   FaTwitter,
   FaLinkedin,
   FaBuffer,
+  FaCertificate,
+  FaHackerrank,
 } from "react-icons/fa";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
@@ -107,6 +109,21 @@ export default function MinNavItems() {
         </ScrollLink>
         <ScrollLink
           activeClass="active"
+          to="certificates"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <Menu>
+            <FaCertificate className={commonClass("text-xl", "certificates")} />
+            <p className={commonClass("text-lg", "certificates")}>
+              Certificates
+            </p>
+          </Menu>
+        </ScrollLink>
+        <ScrollLink
+          activeClass="active"
           to="contact"
           spy={true}
           smooth={true}
@@ -132,8 +149,13 @@ export default function MinNavItems() {
           >
             <FaLinkedin size={20} />
           </Link>
-          <Link href="https://twitter.com/TSelvasothy" target="_blank">
-            <FaTwitter size={20} />
+
+          <Link
+            href="https://www.hackerrank.com/profile/thuvamathu618"
+            target="_blank"
+          >
+            <FaHackerrank size={20} />
+
           </Link>
         </div>
       </div>

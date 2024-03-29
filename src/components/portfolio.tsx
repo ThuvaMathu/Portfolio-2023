@@ -1,30 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { TypeAnimation } from "react-type-animation";
-import MyProjectCircle from "../svg/my-project-spinner";
-import {
-  FaHome,
-  FaUserTie,
-  FaCubes,
-  FaShapes,
-  FaBriefcase,
-  FaEnvelope,
-  FaArrowDown,
-  FaBuffer,
-  FaReact,
-  FaFigma,
-  FaAws,
-  FaWordpress,
-} from "react-icons/fa";
+import React from "react";
+import { FaCubes } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
-import { SiFlutter, SiNextdotjs } from "react-icons/si";
 import TranslateOnScroll from "../common/translate-on scroll";
-import {
-  Projects,
-  education,
-  specializations,
-  workExperience,
-} from "../data-service/data-provider";
+import { Projects } from "../data-service/data-provider";
 import Link from "next/link";
+import Image from "next/image";
 export default function Portfolio() {
   return (
     <>
@@ -39,42 +19,65 @@ export default function Portfolio() {
               My Featured <span className=" text-prime_Green ">Projects</span>
             </p>
           </TranslateOnScroll>
-          <div className=" grid grid-cols-1 justify-center items-center  lg:grid-cols-2  w-full gap-5 ">
-            {Projects.map((data: any, i: number) => (
+          <div className=" w-full flex-col gap-4  flex ">
+            {Projects.map((data, i: number) => (
               <div
-                className=" flex sm:justify-startr justify-center items-center "
+                className=" flex sm:justify-startr justify-center items-center  w-full "
                 key={i}
               >
                 <TranslateOnScroll translateX={data?.tx} duration={2000}>
-                  <div className=" flex flex-col w-full  gap-2 lg:gap-4  group ">
+                  <div className=" flex flex-col w-full gap-1 lg:gap-2  group ">
                     <div
-                      className=" flex flex-col justify-center items-center w-full h-80  pb-4 px-2 rounded-4xl   "
+                      className=" flex flex-col  w-full h-80  py-4 px-2 rounded-2xl overflow-hidden relative  "
                       style={{ backgroundColor: data?.color }}
                     >
-                      <div className="max-w-sm object-cover mt-10 rounded-2xl overflow-hidden  ">
-                        <img
-                          className=" w-full group-hover:scale-105 transition-all duration-700 ease-in-out  "
+                      <p className=" ml-2 text-left text-lg sm:text-xl group-hover:invisible visible  transition-all duration-700 ease-in-out ">
+                        {data?.title}
+                      </p>
+                      <div className=" w-full h-full mt-2 rounded-2xl overflow-hidden relative">
+                        <Image
+                          className=" w-full group-hover:scale-105 transition-all duration-700 ease-in-out object-cover  "
+                          fill
                           src={data?.img.src}
                           alt={data?.title}
                         />
                       </div>
 
-                      <div className=" flex justify-start items-start w-full mt-5 ml-5 ">
-                        <Link
-                          href={data?.webLink}
-                          target="_blank"
-                          className=" text-lg px-8 py-2 rounded-full bg-prime_black group-hover:bg-white group-hover:text-black transition-all duration-700 ease-in-out "
-                        >
-                          <div className=" flex flex-row justify-center items-center gap-4 ">
-                            View <MdOpenInNew className="" />
+                      <div className=" absolute top-0 left-0 bg-black/90 w-full h-full group-hover:translate-y-0 translate-y-full group-hover:opacity-100 opacity-0   duration-500 ease-in-out transition-all py-4 px-6   ">
+                        <p className="  text-left text-lg sm:text-xl group-hover:text-prime_Green  hover:border-prime_Green transition-all duration-700 ease-in-out ">
+                          {data?.title}
+                        </p>
+                        <div className=" w-full max-h-48 overflow-y-auto mt-2 ">
+                          <div className=" flex flex-col gap-2   ">
+                            <p className="  text-base sm:text-lg font-semibold text-gray-300 ">
+                              Description
+                            </p>
+                            <p className="  text-sm sm:text-base text-gray-300  ">
+                              {data?.des}
+                            </p>
                           </div>
-                        </Link>
+                          <div className=" flex flex-col gap-2 mt-2 ">
+                            <p className="  text-base sm:text-lg font-semibold text-gray-300 ">
+                              Technology
+                            </p>
+                            <p className="  text-sm sm:text-base text-gray-300  ">
+                              {data?.tech}
+                            </p>
+                          </div>
+                        </div>{" "}
+                        <div className=" flex justify-start items-start w-full mt-4 ">
+                          <Link
+                            href={data?.webLink}
+                            target="_blank"
+                            className=" text-lg  text-prime_Green transition-all duration-700 ease-in-out "
+                          >
+                            <div className=" flex flex-row justify-center items-center gap-4 ">
+                              Visit site <MdOpenInNew className="" />
+                            </div>
+                          </Link>
+                        </div>
                       </div>
                     </div>
-
-                    <p className=" ml-2 text-left text-lg sm:text-xl group-hover:text-prime_Green  hover:border-prime_Green transition-all duration-700 ease-in-out ">
-                      {data?.title}
-                    </p>
                   </div>
                 </TranslateOnScroll>
               </div>

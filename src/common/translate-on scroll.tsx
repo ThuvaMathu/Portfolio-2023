@@ -46,7 +46,7 @@ const TranslateOnScroll = ({ children, ...props }: translateType) => {
   };
 
   return (
-    <div ref={elementRef} style={styles} className=" delay-300 ">
+    <div ref={elementRef} style={styles} className=" delay-300 w-full ">
       {children}
     </div>
   );

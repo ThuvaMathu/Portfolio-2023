@@ -7,6 +7,7 @@ import {
   FaBriefcase,
   FaEnvelope,
   FaBuffer,
+  FaCertificate,
 } from "react-icons/fa";
 import Link from "next/link";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
@@ -128,6 +129,25 @@ export default function NavBar(props: any) {
               size={25}
               className={` ${
                 activeSection === "portfolio"
+                  ? " text-prime_Green "
+                  : " text-prime_gray "
+              } `}
+            />
+          </ScrollLink>
+        </Tooltip>
+        <Tooltip text="Certificates">
+          <ScrollLink
+            activeClass="active"
+            to="certificates"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <FaCertificate
+              size={25}
+              className={` ${
+                activeSection === "certificates"
                   ? " text-prime_Green "
                   : " text-prime_gray "
               } `}

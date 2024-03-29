@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import myImg from "@/assets/my-img.png";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedin, FaHackerrank } from "react-icons/fa";
 import { ImArrowDown2 } from "react-icons/im";
 import { personal } from "../data-service/data-provider";
 import Link from "next/link";
@@ -41,11 +41,11 @@ export default function PersonalHeader() {
               <FaLinkedin size={30} />
             </Link>
             <Link
-              href="https://twitter.com/TSelvasothy"
+              href="https://www.hackerrank.com/profile/thuvamathu618"
               target="_blank"
               className=" w-16 h-16 border border-prime_gray rounded-full flex justify-center items-center text-prime_gray hover:text-prime_Green hover:border-prime_Green transition-all duration-500 ease-linear "
             >
-              <FaTwitter size={30} />
+              <FaHackerrank size={30} />
             </Link>
           </div>
           <div className=" w-full flex justify-center items-start gap-3 ">

@@ -1,6 +1,8 @@
 import useWindowDimensions from "@/src/common/get-dimention";
+import Blog from "@/src/components/blog";
 import Contact from "@/src/components/contact";
 import Home from "@/src/components/home";
+import MyCertificates from "@/src/components/my-certificates";
 import MySKills from "@/src/components/my-skills";
 import MySpec from "@/src/components/my-spec";
 import MiniScrNavBar from "@/src/components/navbar/mini-scr-nav";
@@ -88,13 +90,25 @@ export default function Main() {
           </section>
           <section
             id="portfolio"
-            className=" xl:mt-0 mt-10 mb-6 w-full max-w-[700px] min-h-screen h-full flex justify-center items-center  "
+            className=" xl:mt-0 mt-10 mb-3 w-full max-w-[700px] min-h-screen h-full flex justify-center items-center  "
           >
             <Portfolio />
           </section>
           <section
-            id="contact"
+            id="certificates"
+            className="  xl:mt-0 mt-5 mb-6 w-full max-w-[700px] min-h-[70vh] h-full flex justify-center items-center  "
+          >
+            <MyCertificates />
+          </section>
+          {/* <section
+            id="blog"
             className=" xl:mt-0 mt-10 mb-6 w-full max-w-[700px] min-h-screen h-full flex justify-center items-center  "
+          >
+            <Blog />
+          </section> */}
+          <section
+            id="contact"
+            className=" xl:mt-0 mt-10 mb-6 w-full max-w-[700px] min-h-[80vh] h-full flex justify-center items-center  "
           >
             <Contact />
           </section>

@@ -34,6 +34,7 @@ function Profile() {
             Node.js, alongside proficiency in cloud platforms like GCP and AWS,
             I bring a comprehensive skill set to the table.
             <br />
+
             <br /> Having recently contributed to projects at Stoik Digital,
             where I collaborated with cross-functional teams to design and
             implement new features for web and mobile applications, I have honed
@@ -42,6 +43,7 @@ function Profile() {
             internship, I am keen to leverage my skills and experiences in a new
             role. {`Let's`} engage in a discussion on how I can bring value to
             your project.
+
           </p>
         </TranslateOnScroll>
       </div>

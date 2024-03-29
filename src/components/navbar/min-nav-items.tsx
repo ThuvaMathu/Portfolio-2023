@@ -149,11 +149,13 @@ export default function MinNavItems() {
           >
             <FaLinkedin size={20} />
           </Link>
+
           <Link
             href="https://www.hackerrank.com/profile/thuvamathu618"
             target="_blank"
           >
             <FaHackerrank size={20} />
+
           </Link>
         </div>
       </div>

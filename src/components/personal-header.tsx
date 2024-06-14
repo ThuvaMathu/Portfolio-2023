@@ -56,7 +56,7 @@ export default function PersonalHeader() {
               className=" w-4/5 mt-10 bg-[] text-lg rounded-2xl text-black py-3 flex justify-center items-center hover:scale-105 transition-all duration-500 ease-linear bg-prime_Green "
             >
               <div className=" flex flex-row gap-3 justify-center items-center ">
-                DOWNLOAD CV <ImArrowDown2 className=" animate-bounce " />
+                Download CV <ImArrowDown2 className=" animate-bounce " />
               </div>
             </a>
           </div>

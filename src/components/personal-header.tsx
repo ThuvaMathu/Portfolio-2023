@@ -40,13 +40,13 @@ export default function PersonalHeader() {
             >
               <FaLinkedin size={30} />
             </Link>
-            <Link
+            {/*<Link
               href="https://www.hackerrank.com/profile/thuvamathu618"
               target="_blank"
               className=" w-16 h-16 border border-prime_gray rounded-full flex justify-center items-center text-prime_gray hover:text-prime_Green hover:border-prime_Green transition-all duration-500 ease-linear "
             >
               <FaHackerrank size={30} />
-            </Link>
+            </Link>*/}
           </div>
           <div className=" w-full flex justify-center items-start gap-3 ">
             <a
